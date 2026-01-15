@@ -9,6 +9,3 @@ Route::get('/', function () {
 
 
 Route::get('/home', [PageController::class, 'home']);
-Route::get('/about', [PageController::class, 'about']);
-Route::get('/menu', [PageController::class, 'menu']);
-Route::get('/contact-us', [PageController::class, 'contactUs']);

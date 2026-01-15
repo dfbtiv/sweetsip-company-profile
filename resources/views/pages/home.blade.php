@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
-
 @section('content')
-<h1> Welcome to Sweet&Sip Company Profile</h1>
-<p> This is Home Page.</p>
+    @include('partials.navbar')
+    @include('partials.about')
+    @include('partials.menu')
+    @include('partials.contactus')
+    @include('partials.footer')
 @endsection
 
