@@ -9,3 +9,6 @@ Route::get('/', function () {
 
 
 Route::get('/home', [PageController::class, 'home']);
+Route::get('/reservation', function () {
+    return view ('pages.reservation');
+});
