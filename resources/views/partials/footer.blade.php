@@ -1,3 +1,4 @@
-<footer class="footer">
-    <p> © 2026 Sweet&Sip Company Profile</p>
-</footer>
+   <!-- footer -->
+    <footer>
+        <p>&copy; 2026 Sweet&Sip  </p>
+    </footer>
