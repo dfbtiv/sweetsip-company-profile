@@ -7,6 +7,8 @@
     @include('partials.about')
     @include('partials.menu')
     @include('partials.gallery')
+    @include('partials.contact')
     @include('partials.footer')
+
 @endsection
 

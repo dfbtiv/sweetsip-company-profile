@@ -4,14 +4,13 @@
             <!-- left -->
              <div class="contact-left">
                 <div class="contactlogo">
-                    <!-- <img src="assets/oval-logo.png" alt="logo"> -->
                     <img src="{{ asset('assets/oval-logo.png') }}" alt="logo" >
                 </div>
                 <p>Subscribe to sweet deals, exclusive promos, and our latest menu.</p>
-                <div class="contact-form">
-                    <input type="text" placeholder="Enter Email Address">
-                    <button> Send </button>
-                </div>
+                <form class="contact-form" id="subscribe-form">
+                    <input type="email" placeholder="Enter Email Address" required>
+                    <button type="submit"> Send </button>
+                </form>
             </div>
              <!-- Right -->
               <div class="contact-right">
@@ -52,4 +51,3 @@
               </div>
         </div>
       </section>
-@endsection

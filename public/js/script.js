@@ -34,3 +34,19 @@ next.addEventListener('click', () => {
 prev.addEventListener('click', () => {
     container.scrollBy({ left: -270, behavior: "smooth"});
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('subscribe-form');
+
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            alert(
+                'Berhasil Subscribe! \n\n' +
+                'Subscribe to sweet deals, exclusive promos, and our latest menu.'
+            );
+            form.reset();
+        });
+    }
+});
