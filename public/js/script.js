@@ -3,13 +3,13 @@ console.log('Company Profile Loaded');
 const tombol = document.getElementById('tombol-hero');
 
 // tamabah event listener utk tombol "click" (ketika di klik)
-tombol.addEventListener('click', function(){
-    alert('halo, javascript km sudah berhasil terhubung');
+// tombol.addEventListener('click', function(){
+//     alert('halo, javascript km sudah berhasil terhubung');
 
-    // contoh utk ubah background tombol setelah di klik
-    tombol.style.backgroundColor="pink";
-    tombol.innerText="sudah diklik";
-})
+//     contoh utk ubah background tombol setelah di klik
+//     tombol.style.backgroundColor="pink";
+//     tombol.innerText="sudah diklik";
+// })
 
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");

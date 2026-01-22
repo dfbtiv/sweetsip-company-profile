@@ -67,6 +67,11 @@ body {
 }
 
 @media(max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     .hamburger-menu {
         display: flex;
     }
@@ -74,19 +79,22 @@ body {
     .nav-menu {
         position: fixed;
         top: 0;
-        right: -100%;
+        /* right: -100%; */
+        right: 0;
         height: 100vh;
         width: 260px;
         background-color: white;
         flex-direction: column;
         padding: 80px 24px;
         gap: 24px;
-        transition: right 0.3s ease;
         box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
     }
 
     .nav-menu.active {
-        right: 0;
+        /* right: 0; */
+        transform: translateX(0);
     }
 }
 /* section umum */
