@@ -156,11 +156,32 @@ section {
     height: 300px;
 }
 
+/* heroRsvp */
+#hero-rsvp {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 80px 10% 50px;
+    justify-content: center;
+    /* background-image: url('../assets/kafe2.png'); */
+    background-image: url('../assets/kafe2.png');
+    background-color: #41521F;
+    min-height: 30vh;
+
+
+}
+
+.hero-rsvp-text {
+    text-align: center;
+    color: #41521F;
+}
+
+
 /* about */
 /* css grid utama */
 #about {
     padding: 80px 10% 0;
-    color: #41521F;
+    color: #521f39;
 }
 
 .about-container {
@@ -486,18 +507,36 @@ footer {
 
 /* reservation page */
 #reservation {
-    max-width: 1100px;
-    margin: auto;
-    /* background-color: ; */
+    position: relative;
+    background: #dae4c6;
+    padding: 40px 10% 200px;
+    text-align: center;
+    color: #41521F;
 }
 
 .reservation-text {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 40px;
     text-align: center;
-    margin-top: 32px;
-    margin-bottom: 32px;
+
 
 }
 
+.reservation-card {
+
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto -100px;
+    background: #dae4c6;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid rgba(0,0,0,0.05);
+
+}
 .reservation-text h6 {
     margin: auto;
 }
@@ -540,4 +579,9 @@ footer {
 }
 .form-field.full-width {
     width: 100%;
+}
+
+.form-actions {
+    margin-top: 5px;
+    text-align: right;
 }
