@@ -1,59 +1,124 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Sweet n Sip Company Profile Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 📌 Overview
 
-## About Laravel
+Sweet n Sip Company Profile Website is a web-based application developed to enhance the digital presence of Sweet n Sip. This project is a continuation of the previous frontend-only company profile and is now extended into a full-stack web application using Laravel.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+The website not only presents company information but also introduces an admin management system to handle content dynamically.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🚀 Features
 
-## Learning Laravel
+### User Side
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+* Company profile homepage
+* Product showcase / best sellers
+* Gallery section
+* Reservation or contact feature
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Admin Side
 
-## Laravel Sponsors
+* Admin login authentication
+* Dashboard for managing website content
+* Manage products (add, edit, delete)
+* Manage gallery content
+* Manage reservations (if implemented)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 🛠️ Tech Stack
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+* **Frontend**: HTML, CSS, JavaScript
+* **Backend**: PHP (Laravel Framework)
+* **Database**: MySQL
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🔄 Project Background
 
-## Code of Conduct
+This project is a continuation of a previously developed frontend company profile repository. The initial version focused on static UI/UX design, while this version integrates backend functionality and database management to create a fully dynamic web application.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## ⚙️ Installation & Setup
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+1. Clone the repository
 
-## License
+```bash
+git clone https://github.com/dfbtiv/sweetsip-company-profile
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+2. Navigate to the project folder
+
+```bash
+cd your-repo
+```
+
+3. Install dependencies
+
+```bash
+composer install
+```
+
+4. Copy environment file
+
+```bash
+cp .env.example .env
+```
+
+5. Generate application key
+
+```bash
+php artisan key:generate
+```
+
+6. Set up database in `.env`
+
+```env
+DB_DATABASE=your_database
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+7. Run migration
+
+```bash
+php artisan migrate
+```
+
+8. Run the server
+
+```bash
+php artisan serve
+```
+
+9. Open in browser
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 🔐 Admin Access
+
+Admin login page:
+
+```
+/admin/login
+```
+
+---
+
+## 📌 Project Status
+
+This project is currently under development. Core features such as admin authentication and content management are being actively implemented.
+
+---
+
+## 👤 Author
+
+* Dwi Febriyanti
+
+---
