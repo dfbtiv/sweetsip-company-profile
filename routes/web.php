@@ -3,14 +3,14 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\AuthController;
-
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\ReservationController;
 
 
-Route::get('/home', [PageController::class, 'home']);
-Route::get('/reservation', function () {
-    return view ('pages.reservation');
-});
+
+// landing page
+Route::get('/home', [PageController::class, 'home'])->name('home');
+
+Route::get('/reservation', [ReservationController::class, 'index'])->name('reservation.index');
+
+// admin
 Route::get('/admin/login', [AuthController::class, 'showLogin'])->name('admin.login');
